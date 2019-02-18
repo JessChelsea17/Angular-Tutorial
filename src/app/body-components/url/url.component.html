@@ -1,0 +1,18 @@
+<div class="div-url">
+    <div class="div-image"><img class="anime-logo" src="assets/image/bulbasaur.jpg"></div>
+     <!-- ngFor -->
+     <div class="ngFor">
+        <table align="center">
+                <tr>
+                        <th>Moves</th>
+                        <th>URL</th>
+                </tr>
+                <tr *ngFor='let pokemon of pokemon'>
+                       
+                        <td>{{pokemon.move.name}}</td>    
+                        <td>{{pokemon.move.url}}</td>       
+                </tr>
+        </table>
+</div>
+</div>
+

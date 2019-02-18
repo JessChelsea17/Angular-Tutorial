@@ -1,0 +1,24 @@
+.div-pokemonList{
+    margin-top: 5rem;
+    overflow: auto;
+}
+.div-image {
+  position: fixed;  
+  margin-left: 10rem;
+}
+.ngFor {
+  position: fixed;
+  margin-left: 50rem;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    // width: 50%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }

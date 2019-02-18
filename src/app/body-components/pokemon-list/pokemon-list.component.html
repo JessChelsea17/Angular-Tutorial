@@ -1,0 +1,16 @@
+<div class="div-pokemonList">
+    <div class="div-image"><img class="anime-logo" src="assets/image/Pokemon-List.png"></div>
+    <!-- ngFor -->
+    <div class="ngFor">
+            <table align="center">
+                    <tr>
+                            <th>Name</th>
+                            <th>URL</th>
+                    </tr>
+                    <tr *ngFor='let pokemon of list'>   
+                            <td>{{pokemon.name}}</td>    
+                            <td>{{pokemon.url}}</td>       
+                    </tr>
+            </table>
+    </div>
+</div>
