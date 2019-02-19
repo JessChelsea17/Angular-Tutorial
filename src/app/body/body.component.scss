@@ -1,8 +1,53 @@
 .div-body {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    top: 5rem;
-    background-color: whitesmoke !important;
-    height: 100%;
-  }
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 5rem;
+  background-color: whitesmoke !important;
+  height: 100%;
+  text-align: center
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 12px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #007acc;
+  background-color: #ffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+// .ngIf,
+// .ngFor,
+// .ngSwitch,
+// .ngClass,
+// .outputDecorator {
+//   margin-top: 50px 
+// }
+
+// .event-binding,
+// .two-way-binding {
+//   margin-top: 20px;
+
+// }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+// .hide {
+//   display: none;
+// }

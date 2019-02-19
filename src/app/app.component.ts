@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-app';
+
+
+  sampleFunction(count) {
+    console.log('Count: ', count);
+
+  }
 }

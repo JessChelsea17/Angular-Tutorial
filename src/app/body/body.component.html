@@ -1,1 +1,51 @@
-<div class="div-body"></div>
+<div class="div-body">
+        <!-- Event Binding -->
+        <div class="event-binding"> 
+                <div class="text">{{textResult}}</div>
+                <button class="button" (click)="submit()">Show Result</button>
+        </div>
+        
+        <!-- Two-Way Binding -->
+        <div class="two-way-binding">
+                Name: <input type="text" [(ngModel)]="name"/>
+                <div>{{name}}</div>
+        </div>
+        
+        <!-- NgIf -->
+        <div class="ngIf" *ngIf="true">Hello World</div>
+        
+        <!-- ngFor -->
+        <div class="ngFor">
+                <table align="center">
+                        <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                        </tr>
+                        <tr *ngFor='let data of list'>   
+                                <td>{{data.name}}</td>    
+                                <td>{{data.age}}</td>       
+                        </tr>
+                </table>
+        </div>
+        
+        <!-- ngSwitch and ngStyle -->
+        <div class=ngSwitch [ngStyle]="setColor()">
+                        <div [ngSwitch]="selectColor">
+                                        <p *ngSwitchCase="'red'">RED</p>
+                                        <p *ngSwitchCase="'blue'">BLUE</p>
+                                        <p *ngSwitchCase="'green'">GREEN</p>
+                                        <p *ngSwitchDefault>YELLOW</p>
+                        </div>
+        </div>
+        
+        <!-- ngClass -->
+        <div [ngClass]="{ 'hide': isHidden }">
+                   Show Me!!!
+        </div>
+        
+        <!-- @Output decorator -->
+        <div class="outputDecorator">
+                <button (click)="valueChanged()">Click Me</button>
+        </div>
+        
+</div>
